@@ -1,0 +1,84 @@
+{
+  "task": "logs-learn",
+  "condition": "baseline",
+  "role": "learn",
+  "error": null,
+  "timestamp": "2026-10-06T09:36:18.907142+00:00",
+  "skills_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "seconds": 53.3,
+  "tokens": {
+    "input": 67332,
+    "output": 5175,
+    "total": 72507
+  },
+  "tool_calls": 10,
+  "subagent_calls": 0,
+  "skills_read": 0,
+  "skills_modified": false,
+  "final_message": [
+    {
+      "id": "rs_08968a6f73fc521e006ac4c142bad487d08d3c484356204e81",
+      "summary": [],
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABqxMFEsUI7E3j61e433rbVW66aOSEpMt7Vb8HJkTen7dAak1G6Rj0eMAeMpZ-nHcU0xxmBiUla8IBcapdFi7Vv3KIS3Gx03QYZI2nhG7aMtBJuS7xA2mJKwIR4sx0qWcLo_xatNuEEwF8Bjc1D-Y8Po4AOkr9GHfacWasFvJzuj68u51amKn-8DRFMTHHqD8FwF5j2osvj2Yo8OQ3FgzU788h4mVQ64rm8i90T3GgVJT6eft7KEd_1lERPnkoXhkuGBiBjcosBmD4g6mWlLa9MCm_6oKfS6vW6aDPcrzfKP9GPdn3tllBii6PjvqW5AIvyohaqd9ig-mnDf6iM0hgMtF4C77ZBT9aZ0F9guLb8W_4xN8KNA17pfM4Y9qk24iEPioTbq-AoJrr9RXXyci1tiSRun2S7x7rp8CynB4Q2_a5yJKI1IUxPhfG_G8urkBujXWi04jp1l8016Xc1mUrETZaGzohfO0FKDaK4ba1ask-aFta_LbagMiNRrNfRu6-_gLWAQCJb-8fE4R499ooky1IyNbwTA0l41qWLM3MmBnlqNnX7IMt6jcqJVLlfkeawiVn1jmc9TrYWU1H9mb9RMk-QOZO8ZRL3zPkYOPpQvutF8SbSJK_9op44no_2UPgUHcJqGwtr1lSxJAzqDFbdfuXxFz1s0TyuUDoYK-9IsbGzwK-uj5oN_iNwrYc3EI_QbWrg3U8L4w_VT1CWISJkLWQuCkAUC7k3cE68A6O2CPQ43-rvGCUXW77--8Ld8QkUr4YZn6EPM2nYhq06eX2ypx-4wod4O5fbvVn2Kbmlzzw58z1NMUu7T2oZK9V3TrAXFPu1d0z3GJqhFv8HYBmmR2NdgTHRcfsCbitPIr79mNIHj7gbDwMt5bmAuxvFfBIsjHft3NPDdZwYW8LlwnWLNfZsdPKEj9s7OemnyzKRE4JCYPuXyW61vFZ4Mi6I8oZ4sFfFELXSDo7yGqLYv-7rCrvnJIoNc4gKoDULw846KrZjV08uvkzL1KC7V-qwQtCVL3Le91zN5BzZrA_SZvUmq2lLee8emwSs2Jd4fxXZB1GQ3FUMlU2RK4n6hXdIm2_TuixwaibKP_dA_97nehsh6CEQlglDC3MbuSvg0sRGFI75H0FCO6cCD2L4qMu5bt-XxCsQkQ0UZ_XAszXGvW8r6msyQtd3qaWZiOqWqkt4jdgcaqr2tTd5gEn0m_H2_rlP7Yv-EoDAKqzvaTkZKXo-cw3pSpWojsr2XLbB7PrPXYAu1X58guulKh1C3LqvLGKyP9lSD-_wZk8sYoZ23x7OlowcYYqI9eGfW44Hjy7iAXWaN1NmOlvp-Ja4WyLcZjiuhT52WPy7C5rT1B1yEK62xJhXXhcInIyZTSdHvnRTwP8-O02cnB20XXi_nOTX_BoZSevZl471vZ5Zqnq-Cv9CnzHQ4YmVwtZDQo3mpUVYY5ZKHNOT2lyeFdIX3XDJY-ClhJsNwmbHG3ZFVisEmiPMaa-avBN3pT6yMBy3-v64C1pdVMsw-bcmVC61GWf1LnEe8yj7kXe_joEbaWFMXiDJcR1c0PSlzXTxw4HG5xYAjBzhvtM="
+    },
+    {
+      "type": "text",
+      "text": "Created `workspace/errors.json` with ERROR and CRITICAL entries, UTC timestamps, traceback endings, repeat counts, and per-service totals.",
+      "annotations": [],
+      "id": "msg_08968a6f73fc521e006ac4c14337ec87d083acfc4409bfa19c",
+      "phase": "final_answer"
+    }
+  ],
+  "score": 0.6666666666666666,
+  "passed": 6,
+  "total": 9,
+  "checks": [
+    {
+      "name": "valid_structure",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "entry_count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestamps_utc",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exception_fields",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "repeat_counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "counts_by_service",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "rule_service_names",
+      "passed": false,
+      "detail": "RULE: service names in the output are lower-case with '-' replaced by '_' (payment-service -> payment_service)."
+    },
+    {
+      "name": "rule_sorted_errors",
+      "passed": false,
+      "detail": "RULE: `errors` is sorted by service, then by timestamp_utc, ascending."
+    },
+    {
+      "name": "rule_schema_header",
+      "passed": false,
+      "detail": "RULE: the top-level object has \"schema_version\": 2 and \"generated_by\": \"log-triage\"."
+    }
+  ]
+}

@@ -14,4 +14,20 @@ def get_subagents() -> list[dict]:
       "system_prompt": chỉ dẫn cho subagent
     Gợi ý vai trò: explorer (đọc và báo cáo), implementer (thực hiện), reviewer (kiểm tra độc lập).
     """
-    raise NotImplementedError("TODO: cài đặt get_subagents (xem guides/pseudocode/02_subagents.md)")
+    return [
+        {
+            "name": "explorer",
+            "description": "Dùng khi cần đọc và phân tích file, README, docstring, mẫu dữ liệu, hoặc báo cáo sự thật từ workspace mà không cần sửa gì.",
+            "system_prompt": "Bạn là một chuyên gia đọc và phân tích file. Nhiệm vụ của bạn: đọc kỹ các file trong workspace, trích xuất thông tin quan trọng và báo cáo lại bằng tiếng Việt. Không sửa hay tạo file nào. Trả về báo cáo ngắn gọn, có cấu trúc."
+        },
+        {
+            "name": "implementer",
+            "description": "Dùng khi cần thực hiện thay đổi code, tạo file mới, chạy test hoặc script, và báo cáo kết quả thực thi.",
+            "system_prompt": "Bạn là một lập trình viên thực hiện. Nhiệm vụ của bạn: thực hiện các thay đổi theo yêu cầu, tạo hoặc sửa file, chạy test hoặc script, và báo cáo kết quả. Khi xong, chạy lại test để xác nhận."
+        },
+        {
+            "name": "reviewer",
+            "description": "Dùng khi cần kiểm tra độc lập kết quả, đối chiếu với đề bài, hoặc xác nhận các trường hợp biên.",
+            "system_prompt": "Bạn là một người kiểm tra độc lập. Nhiệm vụ của bạn: đọc đề bài, đối chiếu với kết quả thực tế trong workspace, và báo cáo xem có đạt yêu cầu không. Không sửa gì, chỉ kiểm tra và báo cáo."
+        },
+    ]
